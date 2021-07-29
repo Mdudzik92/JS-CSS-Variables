@@ -1,3 +1,21 @@
+/* Declaring variables with global scope */
+:root {
+	--base: #ffc600;
+	--spacing: 10px;
+	--blur: 10px;
+}
+
+/* Calling spacing variable on img padding */
+img {
+	padding: var(--spacing);
+	background: var(--base);
+	filter: blur(var(--blur));
+}
+
+.hl {
+	color: var(--base);
+}
+
 body {
 	text-align: center;
 	background: #193549;
